@@ -1,0 +1,10 @@
+let readlineSync = require('readline-sync');
+let primeraVuelta = readlineSync.questionFloat('defina el tiempo de vuelta en minutos');
+let segundaVuelta = readlineSync.questionFloat('defina el tiempo de vuelta en minutos');
+let tercerVuelta = readlineSync.questionFloat('defina el tiempo de vuelta en minutos');
+let cuartaVuelta = readlineSync.questionFloat('defina el tiempo de vuelta en minutos');
+let numeroVueltas = readlineSync.questionInt('defina el numero de vueltas a dar');
+let tiempoTotal = (primeraVuelta+segundaVuelta+tercerVuelta+cuartaVuelta);
+let promedioVuelta = tiempoTotal/numeroVueltas;
+console.log("el tiempo total fue de "+tiempoTotal+" minutos");
+console.log("el promedio de vuelta fue de "+promedioVuelta+" minutos");
