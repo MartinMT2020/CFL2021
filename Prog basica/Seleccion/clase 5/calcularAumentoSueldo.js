@@ -1,23 +1,30 @@
 let read = require('readline-sync');
 let sueldoActual = read.questionFloat("Ingrese el sueldo actual: ");
-let aumentoCorrespondiente;
-let sueldoAjustado;
+const nulo = 0;
+let factorAumento1 = 0.05;
+let factorAumento2 = 0.1;
+let factorAumento3 = 0.2;
+let rangoMenor = 15001;
+let rangoMedio = 20001;
+let rangoMayor = 25000;
+let aumentoCorrespondiente = 0;
+let sueldoAjustado = sueldoActual;
 
 switch (true) {
-    case ((sueldoActual > 0) && (sueldoActual <= 15000)):
-        aumentoCorrespondiente = sueldoActual * 0.2
+    case ((sueldoActual > nulo) && (sueldoActual <= rangoMenor)):
+        aumentoCorrespondiente = sueldoActual * factorAumento3
         break;
 
-    case ((sueldoActual > 15000) && (sueldoActual <= 20000)):
-        aumentoCorrespondiente = sueldoActual * 0.1
+    case ((sueldoActual > rangoMenor) && (sueldoActual <= rangoMedio)):
+        aumentoCorrespondiente = sueldoActual * factorAumento2
 
         break;
-    case ((sueldoActual > 20000) && (sueldoActual <= 25000)):
-        aumentoCorrespondiente = sueldoActual * 0.05
+    case ((sueldoActual > rangoMedio) && (sueldoActual <= rangoMayor)):
+        aumentoCorrespondiente = sueldoActual * factorAumento1
         break;
 
     default:
-        aumentoCorrespondiente = sueldoActual * 0
+        aumentoCorrespondiente = sueldoActual * nulo
         console.log("Su salario es mayor a $25.000 y por lo tanto no recibe aumento");
 }
 sueldoAjustado = sueldoActual + aumentoCorrespondiente;
