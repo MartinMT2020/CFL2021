@@ -1,3 +1,5 @@
+/*Ejemplo de switch con valores No discretos NO FUNCIONA*/
+
 let readlineSync = require('readline-sync');
 let sueldoActual = readlineSync.questionFloat('ingrese el valor de su sueldo actual');
 let factorAumento1 = 0.05;
@@ -21,5 +23,4 @@ switch (sueldoActual) {
     console.log("Tras la aplicacion escalar de aumentos, a ud no le corresponde aumento");
        
 };
-
 
