@@ -17,6 +17,7 @@ let max = numero;
 let min = numero;
 let cantTotalNum = 0;
 let suma = 0;
+let promedio = 0;
 console.log("numero:" + numero);
 
 while (numero != 0) {
@@ -30,6 +31,6 @@ while (numero != 0) {
         min = numero
     }
 }
-let promedio = suma / cantTotalNum;
+promedio = suma / cantTotalNum;
 console.log("el maximo valor ingresado por el usuario es el: " + max + " y el valor minimo es el " + min +
     "\n y el promedio de todos los numeros ingresados es " + promedio);
