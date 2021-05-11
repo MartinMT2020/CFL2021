@@ -26,7 +26,7 @@ function mostrarArr(v, l) {
   console.log(arreglo); //No habia console.log en el metodo original, no mostraba nada por consola
 }
 
-function encontrarOcurrenciaNumero(v, l, n) {
+function encontrarOcurrenciaNumero(v, l, n) { //el nombre de la funcion "metodo" no es representativo, se cambia al actual 
   let ocurrencia = 0;
   for (i = 0; i < l; i++) {
     if (v[i] == n) {
