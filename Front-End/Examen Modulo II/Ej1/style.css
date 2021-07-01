@@ -1,0 +1,55 @@
+*{
+    margin: 5px;
+}
+body {
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: red;
+    text-align: center;
+    text-transform: uppercase;
+}
+p {
+    text-align: center;
+    font-style: italic;
+}
+
+/* SEPARO LAS CLASES GENERALES QUE UBICO AL PRINCIPIO, DE LAS PUNTUALES QUE VAN A CONTINUACION*/
+
+.bold {
+    font-weight: bold;
+    font-size: large;
+}
+
+.ancho500 {
+    width: 500px;
+}
+
+.centrado {
+    border: solid thick;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.doble-img{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.w-45{
+    width: 45%;
+}
+
+.diego-w-300 {
+    width: 300px;
+}
+.diego-w-40{
+    width: 40%;
+}
