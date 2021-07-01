@@ -13,7 +13,7 @@ notas, mostrará un mensaje de error y continuará con otro alumno)
 
 let readlineSync = require('readline-sync');
 
-let nombreAlumno = readlineSync.question('ingrese el nombre del alumno');
+let nombreAlumno = readlineSync.question('ingrese el nombre del alumno: ');
 
 if (nombreAlumno != "") {
     while (nombreAlumno != "") {
@@ -27,7 +27,7 @@ if (nombreAlumno != "") {
         } else{            
             console.log("ha ingresado las notas de forma incorrecta");
         }
-        nombreAlumno = readlineSync.question('ingrese el nombre del alumno');
+        nombreAlumno = readlineSync.question('ingrese el nombre del alumno: ');
     }
     console.log("no ha ingresado datos por lo que saldrá del programa");
 } else console.log("no ha ingresado datos por lo que saldrá del programa");

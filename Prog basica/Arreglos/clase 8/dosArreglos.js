@@ -15,5 +15,5 @@ for (i = 0; i < lengthNombres; i++) {
     console.log("El nombre en "+i+" es "+arrNombresDeseados[i]);
 }
 for (i = 0; i < lengthNumeros; i++) {
-    console.log("El nombre en "+i+" es "+arrNumerosDeseados[i]);
+    console.log("El numero en "+i+" es "+arrNumerosDeseados[i]);
 }
