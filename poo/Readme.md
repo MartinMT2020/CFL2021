@@ -1,1 +1,1 @@
-Este curso se encarga de desarrollar programadores full stack
+Este curso se encarga de instruir programadores full stack
