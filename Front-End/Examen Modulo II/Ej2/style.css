@@ -1,0 +1,16 @@
+ul {
+  background-color: darkorchid;
+}
+li {
+  background-color: khaki;
+  font-size: medium;
+}
+
+#btn-borrar {
+  color: darkgreen;
+  background-color: darkorange;
+}
+#btn-guardar {
+  color: darkred;
+  background-color: darkseagreen;
+}
