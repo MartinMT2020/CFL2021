@@ -1,0 +1,1 @@
+Este curso se encarga de desarrollar programadores full stack
