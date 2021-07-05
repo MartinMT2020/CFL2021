@@ -1,0 +1,18 @@
+{
+  "name": "proyecto1",
+  "version": "1.0.0",
+  "description": "practica importacion librerias",
+  "main": "index.js",
+  "scripts": {
+    "validar": "node validar.js",
+    "parsear": "node parsear.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@alordash/parse-word-to-number": "^3.0.4",
+    "card-validator": "^8.1.1",
+    "readline-sync": "^1.4.10"
+  }
+}
